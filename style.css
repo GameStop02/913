@@ -90,3 +90,30 @@ a {
     background-color: #c2c2c2;
     color: #303030;
 }
+.rainbow-text {
+    background: linear-gradient(
+        90deg,
+        red,
+        orange,
+        yellow,
+        lime,
+        cyan,
+        blue,
+        violet,
+        red
+    );
+    background-size: 400% auto;
+    color: transparent !important;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: rainbow 4s linear infinite;
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0% center;
+    }
+    100% {
+        background-position: 400% center;
+    }
+}
