@@ -1866,9 +1866,9 @@ function runPayload(path) {
 kexploit().then(() => {
 	setTimeout(() => {
 		runPayload("./goldhen_2.4b18.10.bin");
-		msgs.innerHTML = "GoldHEN v2.4b18.10 Loaded ...";
-	},500);
+		msgs.innerHTML = "GoldHEN v2.4b18.10...تم تحميل";
+	}, 500);
 }).catch(() => {
-    msgs.innerHTML = "Failed to Load! Restart Your Console ...";
+    msgs.innerHTML = "...فشل التحميل! أعد تشغيل جهازك";
     msgs.style.color = "yellow";
 });
